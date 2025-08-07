@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML5 Form Example</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Media Section</h2>
+      <p>Listen to this audio:</p>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <p>Watch this video:</p>
+      <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <section>
+      <h2>List of Topics</h2>
+      <ul>
+        <li>HTML Forms</li>
+        <li>HTML Tables</li>
+        <li>HTML5 Input Types</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills Table</h2>
+      <table>
+        <caption>Web Skills</caption>
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Beginner</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="/submit" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Info</legend>
+
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" placeholder="Jane" required>
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder="Doe" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Info</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]{5,}" title="At least 5 alphanumeric characters" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="6" required>
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" required>
+
+          <label for="role">Account Type:</label>
+          <select id="role" name="role" required>
+            <option value="">Select...</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Details</legend>
+
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+          <label for="newsletter">Newsletter Subscription:</label>
+          <input type="checkbox" id="newsletter" name="newsletter" checked readonly>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 HTML5 Form Demo</p>
+  </footer>
+
+</body>
+</html>
