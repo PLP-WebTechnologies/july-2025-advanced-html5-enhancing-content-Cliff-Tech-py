@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header, footer {
+      background-color: #0044cc;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 6px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: auto;
+      background-color: #0044cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Showcase</h1>
+  </header>
+
+  <section>
+    <h2>📋 Top 3 Favorite Programming Languages</h2>
+    <ol>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>HTML/CSS</li>
+    </ol>
+
+    <h3>✔ Key Features of HTML5</h3>
+    <ul>
+      <li>Semantic tags</li>
+      <li>Form validation</li>
+      <li>Media embedding</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📊 Student Grades Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice</td>
+          <td>Math</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>Science</td>
+          <td>B+</td>
+        </tr>
+        <tr>
+          <td>Charlie</td>
+          <td>English</td>
+          <td>A-</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🎬 Embedded Media</h2>
+    <p>Check out this audio and video embedded using semantic HTML5 tags.</p>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br><br>
+    <video width="320" height="240" controls>
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>📝 Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name">
+
+        <label for="email">Email Address:</lab
